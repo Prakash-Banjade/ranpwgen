@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-blue: #60c7ff;
+    --primary-pink: #f968e4;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Noto Sans', sans-serif;
+    /* background-color: #f5f5f5; */
+    background: linear-gradient(var(--primary-blue), var(--primary-pink));
+}
+
+.container{
+    /* background-color: #f5f5f5; */
+    max-width: 1000px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 50px;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.container > *{
+    flex: 1 1 24rem;
+}
+
+.midContent{
+    background: linear-gradient(var(--primary-blue), var(--primary-pink));
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+}
+
+.midContent form{
+    width: 90%;
+    padding: 0 1rem;
+}
+
+.midContent .display{
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: blueviolet;
+}
+
+.midContent .display input{
+    height: 2rem;
+    background: transparent;
+    border: 0;
+    width: 100%;
+    text-align: right;
+    font-size: 1rem;
+    color: white;
+    padding-right: 10px;
+}
+
+.midContent .display .copyBtn{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.midContent .display .copyBtn::before{
+    content: attr(val);
+    position: absolute;
+    height: 20px;
+    /* width: 40px; */
+    font-size: .9rem;
+    padding: 4px 8px;
+    border-radius: 5px;
+    left: 150%;
+    background-color: #ddd;
+    opacity: .8;
+}
+.midContent .display .copyBtn::after{
+    content: '';
+    position: absolute;
+    height: 0;
+    border: 6px solid transparent;
+    border-right-color: #ddd;
+    opacity: .8;
+    right: -50%;
+    /* background-color: red; */
+}
+
+::placeholder{
+    color: #bbb;
+}
+.midContent .display input:focus{
+    outline: none;
+}
+
+.midContent .display i{
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 3px;
+    margin-left: 1rem;
+}
+
+.midContent .display i#copyBtn{
+    cursor: pointer;
+    color: #ddd;
+    opacity: .8;
+    display: none;
+}
+
+.pwTypeContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pwFeatureContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="checkbox"], input[type="radio"]{
+    accent-color: blueviolet;
+}
+
+#btn{
+    width: 100%;
+    padding: 8px 0;
+    font-size: 1rem;
+    /* border: 1px solid #ddd; */
+    border: none;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 5px;
+    cursor: pointer;
+}

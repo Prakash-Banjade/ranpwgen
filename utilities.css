@@ -1,0 +1,75 @@
+h1{
+    font-size: 2rem;
+}
+
+.mb-4{
+    margin-bottom: 16px;
+}
+.mb-3{
+    margin-bottom: 12px;
+}
+
+.mb-2{
+    margin-bottom: 8px;
+}
+
+.mx-4{
+    margin-left: 16px;
+    margin-right: 16px;
+}
+.mx-3{
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.mx-2{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.my-4{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.my-3{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.my-2{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.dflex.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dflex{
+    display: flex;
+}
+
+.dflex.center.flexCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.flexCol{
+    flex-direction: column;
+}
+
+.space-around{
+    justify-content: space-around;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+p{
+    color: #444;
+}

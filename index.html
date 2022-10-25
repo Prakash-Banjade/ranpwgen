@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utilities.css">
+    <script src="main.js" defer></script>
+    <script src="https://kit.fontawesome.com/e5dc0c1e60.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="dflex center">
+    <main>
+        <div class="container dflex space-around">
+            <!-- <figure class="dflex center">
+                <img src="passwordLogo.png" alt="a password logo with gradinent color" />
+            </figure> -->
+            <div class="midContent dflex center flexCol">
+                <form action="#">
+                    <h1 class="mb-2">Password Generator</h1>
+                    <section class="display dflex mb-4">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="text" name="password" id="generatedPassword" placeholder="Click to generate" readonly />
+                        <div id="copyBtnBox" val="Copy">
+                            <i class="fa-solid fa-copy" id="copyBtn"></i>
+                        </div>
+                    </section>
+                    <section class="passwordTypes">
+                        <div class="pwTypeContainer">
+                            <label for="strongPassword">Strong Password</label>
+                            <input type="radio" name="password-type" id="strongPassword" value="strong password" checked />
+                        </div>
+
+                        <div class="pwTypeContainer">
+                            <label for="veryStrongPassword">Very strong password</label>
+                            <input type="radio" name="password-type" id="veryStrongPassword"
+                            value="very strong password" />
+                        </div>
+
+                        <div class="pwTypeContainer">
+                            <label for="funnyPassword">Funny password</label>
+                            <input type="radio" name="password-type" id="funnyPassword" />
+                        </div>
+                    </section>
+                    <hr class="my-2">
+                    <section class="passwordFeatures">
+                        <div class="pwFeatureContainer">
+                            <label for="uppercase">Uppercase</label>
+                            <input type="checkbox" name="password-feature" id="uppercase" value="uppercase" checked />
+                        </div>
+
+                        <div class="pwFeatureContainer">
+                            <label for="lowercase">Lowercase</label>
+                            <input type="checkbox" name="password-feature" id="lowercase" value="lowercase" checked />
+                        </div>
+
+                        <div class="pwFeatureContainer">
+                            <label for="numbers">Numbers</label>
+                            <input type="checkbox" name="password-feature" id="numbers" value="numbers" checked />
+                        </div>
+
+                        <div class="pwFeatureContainer">
+                            <label for="symbols">Symbols</label>
+                            <input type="checkbox" name="password-feature" id="symbols" value="symbols" checked />
+                        </div>
+                    </section>
+                    <button id="btn" class="my-3" type="submit"><i class="fa-solid fa-screwdriver-wrench"></i> Generate password</button>
+                </form>
+            </div>
+            <div class="rightContent">
+                <h2>What is a password generator?</h2>
+                <p>
+                    A password generator is a tool that creates a random password for
+                    you. It is a great way to create a strong password that is difficult
+                    to crack. It is also a great way to create a password that you can
+                    remember.
+                </p>
+                <br>
+                <h2>Why use a password generator?</h2>
+                <p>
+                    Using a password generator is a great way to create a strong
+                    password that is difficult to crack. It is also a great way to
+                    create a password that you can remember.
+                </p>
+                <br>
+                <h2>How to use a password generator?</h2>
+                <p>
+                    Password generator is very easy to use. Just select the type of the password you want to generate, select the features you want to include in your password and click on the generate password button.
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
